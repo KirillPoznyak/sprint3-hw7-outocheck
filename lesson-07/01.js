@@ -22,15 +22,15 @@
 // console.log(capitalizeWords(words));
 
 function capitalizeWords(string) {
-  let arrString = string.split('');
+  const arrString = string.split('');
   for (let i = 0; i < arrString.length; i++) {
     if (i === 0 || arrString[i-1] === ' ') {
-      string[i].toUpperCase();
+      arrString[i] = arrString[i].toUpperCase();
     }
   }
   let result = arrString.join('');
   return result;
 }
 
-const words = 'Hello motherfucker!';
+const words = 'hello world from javascript';
 console.log(capitalizeWords(words));
